@@ -1,0 +1,21 @@
+<angular2-multiselect
+  [data]="options"
+  [(ngModel)]="selected"
+  [settings]="{
+    labelKey: 'id',
+    singleSelection: false,
+    badgeShowLimit: 5,
+    closeOnSelect: true,
+    text: 'Select one or more stocks',
+    searchPlaceholderText: 'Search or type a new symbol',
+    enableSearchFilter: true,
+    addNewItemOnFilter: true,
+    noDataLabel: ' ',
+    addNewButtonText: 'Add new symbol'
+  }"
+  (onSelect)="onSelect($event)"
+  (onDeSelect)="onDeSelect($event)"
+  (onAddFilterNewItem)="onAdd($event)"
+  #stocksSelectRef
+>
+</angular2-multiselect>

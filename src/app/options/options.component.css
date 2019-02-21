@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  /* background: yellow; */
+  min-height: 100px;
+}
+
+:host > div {
+  display: flex;
+  flex-direction: column;
+}
+
+:host > div > label {
+  display: block;
+}
+
+.long-option-wrap {
+  flex: 3;
+  margin-right: 60px;
+}
+
+.short-option-wrap {
+  flex: 1;
+  min-width: 60px;
+  position: relative;
+  left: -20px;
+}
+
+.short-option-wrap:last-child {
+  margin-left: 40px;
+}

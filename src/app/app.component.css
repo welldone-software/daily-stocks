@@ -1,0 +1,51 @@
+:host {
+  background-color: white;
+  box-shadow: 1pt 1pt 10pt 0px rgba(145, 156, 171, 0.26);
+  flex-basis: 80%;
+  width: 80%;
+  border-radius: 20px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  min-width: 900px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  align-self: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: bold;
+  padding: 20px;
+  display: block;
+  border-bottom: solid 4px rgb(46, 123, 245);
+}
+
+.subtitle {
+  color: rgb(125, 125, 125);
+  font-size: 16px;
+  padding: 20px;
+  text-align: center;
+}
+
+.note {
+  color: rgb(125, 125, 125);
+  font-size: 12px;
+}
+
+.note em {
+  color: darkred;
+}
+
+app-chart {
+  flex: 1;
+  position: relative;
+  left: -20px;
+}

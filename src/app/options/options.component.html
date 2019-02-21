@@ -1,0 +1,21 @@
+<div class="long-option-wrap">
+  <label>Stocks:</label>
+  <app-stocks-option
+    (added)="onStockAdded($event)"
+    (removed)="onStockRemoved($event)"
+  ></app-stocks-option>
+</div>
+<div class="short-option-wrap">
+  <label>Metric:</label>
+  <app-metric-option
+    [value]="stocksDataService.metric"
+    (changed)="onMetricChagned($event)"
+  ></app-metric-option>
+</div>
+<div class="short-option-wrap">
+  <label>Threshold:</label>
+  <app-threshold-option
+    [value]="stocksDataService.threshold"
+    (changed)="onThresholdChagned($event)"
+  ></app-threshold-option>
+</div>

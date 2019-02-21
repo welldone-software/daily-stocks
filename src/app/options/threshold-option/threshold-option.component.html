@@ -1,0 +1,9 @@
+<input
+  type="number"
+  pattern="^(0|[1-9][0-9]*$)"
+  required
+  [(ngModel)]="value"
+  #thresholdRef="ngModel"
+  (ngModelChange)="onThresholdChange()"
+/>
+<span *ngIf="!thresholdRef.valid">Please enter a positive number</span>

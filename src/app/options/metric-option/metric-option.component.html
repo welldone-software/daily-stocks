@@ -1,0 +1,15 @@
+<angular2-multiselect
+  [data]="options"
+  [(ngModel)]="selected"
+  [settings]="{
+    labelKey: 'id',
+    singleSelection: true,
+    showCheckbox: false,
+    minSelectionLimit: 1,
+    text: 'Select Metric',
+    classes: 'metric-dropdown'
+  }"
+  (onSelect)="onMetricSelect($event)"
+  (onDeSelect)="onMetricDeSelect($event)"
+>
+</angular2-multiselect>

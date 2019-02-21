@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(237, 237, 237);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 1000px;
+  min-height: 800px;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+angular2-multiselect .cuppa-dropdown::after,
+angular2-multiselect .cuppa-dropdown::before {
+  box-sizing: inherit;
+}
+
+angular2-multiselect .c-btn {
+  min-height: 22px;
+  box-sizing: content-box;
+}
+
+angular2-multiselect .select-all {
+  display: none;
+}
+
+.metric-dropdown .selected-list,
+.metric-dropdown .list-area {
+  text-transform: capitalize;
+}
+
+#spinner {
+  opacity: 0.1 !important;
+}
